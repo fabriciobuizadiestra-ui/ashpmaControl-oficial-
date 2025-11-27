@@ -1,4 +1,4 @@
-const form = document.getElementById("loginForm");
+const form = document.getElementById("loginForm")
 const usuario = document.getElementById("usuario");
 const password = document.getElementById("password");
 const msg = document.getElementById("mensajeLogin");
@@ -31,10 +31,11 @@ form.addEventListener("submit", function (e) {
     msg.textContent = "Acceso correcto...";
 
     setTimeout(() => {
-      window.location.href = "index.html"; // 👈 Te manda a tu web principal
+      window.location.href = "index.html"; 
     }, 800);
   } else {
     msg.style.color = "#d93025";
     msg.textContent = "Usuario o contraseña incorrectos";
   }
 });
+
