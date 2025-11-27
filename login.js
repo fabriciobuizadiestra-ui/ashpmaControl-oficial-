@@ -25,7 +25,7 @@ form.addEventListener("submit", function (e) {
 
   if (!valido) return;
 
-  // LOGIN SIMPLE
+  // datos para el loggin
   if (usuario.value === "admin" && password.value === "1234") {
     msg.style.color = "#0f9d58";
     msg.textContent = "Acceso correcto...";
@@ -38,4 +38,5 @@ form.addEventListener("submit", function (e) {
     msg.textContent = "Usuario o contraseña incorrectos";
   }
 });
+
 
