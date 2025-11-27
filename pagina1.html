@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mi web site</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+  <body>
+    <!-- esta es la seccion de logos y menu-->
+    <nav class="topheader">
+      <a href="" class="logo">
+        <img heigth="70" width="70" src="was.jpg" alt="" />
+      </a>
+      <!-- BOTÓN HAMBURGUESA -->
+
+   <button class="menu-toggle" aria-label="Abrir menú">
+
+    &#9776;
+
+    <!-- Ícono de hamburguesa -->
+    
+   </button>
+      <ul class="Menu-Horizontal">
+        <li><a href="">Productos</a></li>
+        <li>
+          <a href="">Servicios</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">informacion</a></li>
+            <li><a href="">registro de sintomas</a></li>
+          </ul>
+        </li>
+        <li><a href="">boton de emergencia</a></li>
+        <li><a href="">Contactanos</a></li>
+      </ul>
+    </nav>
+    <!--seccion de productos-->
+  <section class="seccion-productos">
+    <div class="div-gral-prod">
+      <div class="div-prod-texto">
+        <h2> Seccion Productos </h2>
+        <p>
+          El control del asma se basa en 3 pilares fundamentales 
+          interconectados entre sí: evaluar al paciente, ajustar 
+          el tratamiento y revisar la respuesta al mismo5. Durante 
+          situaciones como la provocada por el confinamiento debido 
+          a la pandemia de la COVID-19, este control puede ser todo un 
+          desafío.
+        </p>
+       
+      </div>
+
+
+      <div class="div-prod-imagen">
+        <img heigth="200" width="200" src="descarga (1).jpg" alt="" />
+        <img heigth="200" width="200" src="descarga.jpg" alt=""/>
+      </div>
+
+
+  </section>
+
+  <!--seccion de prodcutos-->
+  <section class="seccion-productos">
+    <div class="div-gral-prod">
+      <div class="div-prod-texto">
+        <h2> Seccion Productos </h2>
+        <p>Algunas personas utilizan medicamentos diarios para controlar y 
+          prevenir los síntomas. También pueden llevar medicamentos, como un 
+          inhalador de alivio, para utilizarlos durante un ataque de asma. Su 
+          proveedor de atención médica puede ajustar su tratamiento hasta que
+           sus síntomas del asma estén controlados.
+        </p>
+        
+      </div>
+
+
+      <div class="div-prod-imagen">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mKIr7eJb2sc?si=75ib5XEspJWOQjvd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+
+  </section>
+
+  <section class="seccion-formulario">
+  <div class="div-cont-formulario">
+    <h2>Formulario de registro de clientes</h2>
+    <form class="formulario registro clientes">
+      
+      <!--imput-->
+      <div class="campo">
+        <label for="nombre">Nombres Completos</label>
+        <input type="text" id="nombre", name="nombre", placeholder="Ingrese sus nombres:"></div>
+
+      <!--imput-->
+      <div class="campo">
+        <label for="numerop de celular">Numero de contacto</label>
+        <input type="text" id="numero", name="numero", placeholder="Ingrese su numero:"/>
+      </div>
+
+      <!--checkbox-->
+      <div class="campo">
+        <label for="nombre">Pais</label>
+        <select name="pais" id="pais">
+          <option value="">seleccione Pais</option>
+          <option value="Peru">Peru</option>
+          <option value="Brasil">Brasil</option>
+          <option value="Colombia">Colombia</option>
+          </select> 
+      </div>
+      <div class="campo">
+        <label>Intereses</i></label>
+        <ul class="lista chackbox">
+          <li><label><input type="checkbox" name="intereses" value="deportes">deportes</label></li>
+          <li><label><input type="checkbox" name="intereses" value="ciencias">ciencias</label></li>
+          <li><label><input type="checkbox" name="intereses" value="letras">letras</label></li>
+      </ul>
+      </div>
+      <!--RadioBotton-->
+      <div class="campo">
+        <label>sexo</label>
+        <ul class="lista radio">
+          <li><label><input type="radio" name="sexo" value="Masculino">Masculino</li></label>
+          <li><label><input type="radio" name="sexo" value="Femenino">Femenino</li></label>
+        </ul>
+      </div>
+      <button type="submit">enviar</button>
+
+    </form>
+  </div>
+  </section>
+  <section id="footer">
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Logo y nombre de sitio -->
+        <div class="footer-brand">
+          <img
+            src="was.jpg"
+            alt="Logo"
+            class="footer-logo"
+          />
+          <p>ASMA CONTROL</p>
+          <small>© 2025 Todos los derechos reservados</small>
+        </div>
+
+        <!-- Enlaces legales -->
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="/Documentos/3.politica-privacidad.pdf"
+            >Política de Privacidad</a
+          >
+          <!-- Dentro de href llama a un documento pdf con la poltica-->
+          <a href="#">Términos y Condiciones</a>
+          <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+          <a href="\nodebox\obtenerDocumento.pdf">Protección de Datos</a>
+        </div>
+
+        <!-- Redes sociales con íconos personalizados -->
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+              alt="Facebook"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+              alt="Instagram"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt="LinkedIn"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+              alt="Twitter"
+              class="social-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </section>
+  <script src="menu_toggle.js"></script>
+  </body>
+</html>

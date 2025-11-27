@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | AsmaControl</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="login-body">
+    <div class="login-card">
+      <h1 class="login-title">AsmaControl</h1>
+      <p class="login-subtitle">Acceso al sistema</p>
+
+      <form id="loginForm">
+        <input type="text" id="usuario" placeholder="Usuario" />
+        <p id="errorUsuario" class="error-msg"></p>
+
+        <input type="password" id="password" placeholder="Contraseña" />
+        <p id="errorPassword" class="error-msg"></p>
+
+        <button type="submit" class="btn-login">Ingresar</button>
+      </form>
+
+      <p id="mensajeLogin" class="mensaje-login"></p>
+    </div>
+
+    <script>
+      const form = document.getElementById("loginForm");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        console.log("Haciendo redirect a home.html...");
+
+        // 🔴 PRUEBA BRUTA:
+        // Siempre que le des a "Ingresar", te manda a home.html
+        window.location.href = "pagina1.html";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+/* mwenu */
+.AsmaMenu {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: cente;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+}
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.Menu-Horizontal li a {
+  display: block;
+  text-decoration: none;
+}
+.Menu-Horizontal li a:hover {
+  color: red;
+}
+.Menu-Vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 7.375rem;
+  background-color: gainsboro;
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+
+.Menu-Vertical li a {
+  padding: 0.75rem 1.25rem;
+  display: block;
+  transition: background-color 0.3s;
+}
+/* productos */
+.seccion-productos {
+  padding: 3.75rem 1.25rem;
+  background-color: azure;
+}
+.div-gral-prod {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 3rem;
+}
+.div-prod-texto {
+  flex: 1;
+}
+.div-prod-texto h2 {
+  text-align: justify;
+  color: blue;
+  margin-bottom: 0.938rem;
+}
+.div-prod-texto p {
+  text-align: justify;
+  color: darkseagreen;
+  line-height: 1.5;
+  text-align: ;
+}
+.div-prod-imagen {
+  flex: 1;
+}
+.div-prod-imagen img {
+  width: 100%;
+  max-width: 37.5rem;
+}
+.seccion-formulario {
+  background-color: hsl(197, 100%, 54%);
+  padding: 2.5rem;
+  border: 0.188rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.938rem;
+}
+.div-cont-formulario {
+  background-color: blanchedalmond;
+  padding: 1.875rem;
+  border: 0.125rem solid;
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 31.25rem;
+}
+.campo {
+  border: 0.063rem;
+  padding: 0.93rem;
+  margin-bottom: 0.938rem;
+  border-radius: 0.5rem;
+  background-color: hwb(33 39% 16%);
+}
+.formulario registro clientes label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: rgb(0, 255, 191);
+}
+input[type="text"],
+select {
+  width: 90%;
+  padding: 0.625rem;
+  border: 0.063rem solid;
+  border-radius: 0.313rem;
+}
+.lista chackbox,
+.lista radio {
+  list-style: none;
+  padding: 0.625rem;
+  margin: 0;
+  border: 0.063rem;
+  background-color: aqua;
+  border-radius: 0.313rem;
+}
+button {
+  background-color: blueviolet;
+  color: aquamarine;
+  padding: 0.625rem 1.25rem;
+  border: 0.063rem solid;
+  border-radius: 0.313rem;
+}
+
+/* esto ya es del login */
+
+.login-body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ccecff, #e8f8ff);
+  padding: 1rem;
+}
+
+.login-card {
+  background: #fff;
+  width: 100%;
+  max-width: 24rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-title {
+  margin-bottom: 0.3rem;
+  font-size: 1.8rem;
+  color: #0077b6;
+  font-family: "Bungee Spice", sans-serif;
+}
+
+.login-subtitle {
+  margin-bottom: 1.2rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #bbb;
+  border-radius: 0.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 0.8rem;
+  background: #00b4d8;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.btn-login:hover {
+  background: #0096c7;
+}
+
+.error-msg {
+  text-align: left;
+  color: #d93025;
+  font-size: 0.75rem;
+  min-height: 0.9rem;
+}
+
+.mensaje-login {
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+}
